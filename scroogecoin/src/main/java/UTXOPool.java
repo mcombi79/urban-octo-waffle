@@ -1,4 +1,4 @@
-package main.java;
+package it.combi.scrooge;
 
 import java.util.ArrayList;
 import java.util.HashMap;
