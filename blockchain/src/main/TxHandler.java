@@ -1,15 +1,22 @@
+package main;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashSet;
 
 public class TxHandler {
 
     private UTXOPool ledger;
+
+    public UTXOPool getLedger() {
+        return ledger;
+    }
+
     /**
      * Creates a public ledger whose current UTXOPool (collection of unspent transaction outputs) is
      * {@code utxoPool}. This should make a copy of utxoPool by using the UTXOPool(UTXOPool uPool)
      * constructor.
      */
-    public TxHandler( UTXOPool utxoPool) {
+    public TxHandler(UTXOPool utxoPool) {
         // IMPLEMENT THIS
 
         this.ledger = new  UTXOPool(utxoPool);
